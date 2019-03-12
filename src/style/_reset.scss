@@ -1,8 +1,14 @@
-@import "custom-variables";
+// Fonts
+@font-face {
+  font-family: "Gost";
+  src: url("../fonts/gost-type-b.ttf");
+}
 
 body{
-  margin: 0;
+  margin: 30px 60px 15px 60px;
+  max-width: 1920px;
   padding: 0;
+  font-family: "Gost";
 }
 *{
   -webkit-box-sizing: border-box;

@@ -1,6 +1,12 @@
+@font-face {
+  font-family: "Gost";
+  src: url("../fonts/gost-type-b.ttf"); }
+
 body {
-  margin: 0;
-  padding: 0; }
+  margin: 30px 60px 15px 60px;
+  max-width: 1920px;
+  padding: 0;
+  font-family: "Gost"; }
 
 * {
   -webkit-box-sizing: border-box;
@@ -105,3 +111,8 @@ input, textarea, input:before, textarea:before, input:after, textarea:after {
 button {
   border: none;
   cursor: pointer; }
+
+.promo-title {
+  font-size: 5.1rem;
+  display: inline-block;
+  margin-top: 117px; }
