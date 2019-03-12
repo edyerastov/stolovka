@@ -50,62 +50,16 @@ textarea{
   -webkit-appearance: none;
   overflow: auto;
 }
-::-webkit-input-placeholder {
-  color: inherit;
-  opacity: 1;
+
+.default-title{
+  font-size: 54px;
 }
-::-moz-placeholder {
-  color: inherit;
-  opacity: 1;
-}
-:-moz-placeholder {
-  color: inherit;
-  opacity: 1;
-}
-:-ms-input-placeholder {
-  color: inherit;
-  opacity: 1;
-}
-*, *:focus {
-  outline: none !important;
-}
-label {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-*:before, *:after {
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-input, textarea, input:before, textarea:before, input:after, textarea:after {
-  -webkit-user-select: initial;
-  -khtml-user-select: initial;
-  -moz-user-select: initial;
-  -ms-user-select: initial;
-  user-select: initial;
-}
-:focus::-webkit-input-placeholder {
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-:focus::-moz-placeholder {
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-:focus:-moz-placeholder {
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-:focus:-ms-input-placeholder {
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-button{
+.btn{
+  text-transform: uppercase;
+  padding: 15px 24px;
+  outline: 2px solid #000;
   border: none;
-  cursor: pointer;
+  line-height: 0;
+  position: relative;
 }
+

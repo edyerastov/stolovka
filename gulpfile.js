@@ -35,8 +35,7 @@ gulp.task('browser-sync', function() { // Создаем таск browser-sync
 
 gulp.task('scripts', function() {
     return gulp.src('src/js/**/*.js')
-        .pipe(concat('plugins.min.js')) // Собираем их в кучу в новом файле plugins.min.js
-        .pipe(uglify()) // Сжимаем JS файл
+        .pipe(concat('scripts.min.js')) // Собираем их в кучу в новом файле plugins.min.js
         .pipe(gulp.dest('build/js')); // Выгружаем в папку app/js
 });
 

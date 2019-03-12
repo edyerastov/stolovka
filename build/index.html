@@ -7,24 +7,82 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" href="style/bootstrap.css">
 
+    <!-- Owl-caousel -->
+    <link rel="stylesheet" href="style/owl.carousel.min.css">
+
     <!-- Main styles -->
     <link rel="stylesheet" href="style/style.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
 
-<div class="promo">
+<section class="promo">
+    <div class="header d-flex justify-content-between align-items-center">
+        <div class="logo"><img src="img/logo.png" alt=""></div>
+        <div class="btn btn-login d-flex align-items-center">
+            <span>Войти</span> 
+            <img class="ml-3" src="img/btn-arrow.svg" alt="">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-7 d-flex flex-column">
+            <span class="promo-title">Сервис доставки обедов для вашего офиса</span>
+            <span class="promo-addit ml-auto">Всё, что хочешь и компот!</span>
+            <div class="btn btn-send d-flex align-items-center">
+                <span>Отправить заявку</span> 
+                <img class="ml-3" src="img/btn-arrow.svg" alt="">
+            </div>
+        </div>
+        <div class="col-lg-5 position_relative">
+            <img class="img-salad" src="img/img_salad.png" alt="">
+        </div>
+    </div>
+</section>
+
+<section class="how-it-works">
+    <span class="default-title">Как это работает?</span>
+    <div class="d-flex justify-content-around order-line position-relative">
+        <div class="order">
+            <img src="img/order.png" alt="">
+        </div>
+        <div class="kitchen">
+            <img src="img/kitchen.png" alt="">
+        </div>
+        <div class="delivery">
+            <img src="img/courier.png" alt="">
+        </div>
+        <div class="client">
+            <img src="img/customer.png" alt="">
+        </div>
+        <img class="position-absolute line" src="img/path.svg" alt="">
+    </div>
+</section>
+
+<section class="menu">
+    <span class="menu-title">Меню</span>
+    <div class="row">
+        <div class="col-lg-3">
+            
+        </div>
+        <div class="col-lg-6"></div>
+        <div class="col-lg-3"></div>
+    </div>
+</section>
+
+<section class="our-platform">
     <div class="row">
         <div class="col-lg-6">
-            <img src="img/logo.png" alt="">
-            <span class="promo-title">Сервис доставки обедов для вашего офиса</span>
+            <img src="img/" alt="">
         </div>
-        <div class="col-lg-5"></div>
+        <div class="col-lg-6"></div>
     </div>
-</div>
+</section>
 
-<script src="../node_modules/jquery/dist/jquery.js"></script>
-<script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/init.js"></script>
 <script src="js/plugins.min.js"></script>
 </body>
 </html>

@@ -1,7 +1,74 @@
-@import "custom-variables";
+.logo{
+	position: relative;
 
+	&::after{
+		content: '';
+		position: absolute;
+		height: 31px;
+		width: 42px;
+		left: -30px;
+		top: 16px;
+		background-color: $aqua;
+		z-index: -1;
+	}
+}
 .promo-title{
-	font-size: 5.1rem;
+	font-size: 91px;
 	display: inline-block;
 	margin-top: 117px;
+	margin-bottom: 22px;
+	position: relative;
+	line-height: 1.2;
+
+	&::after{
+		content: '';
+    	position: absolute;
+    	height: 26px;
+    	width: 282px;
+    	left: 647px;
+    	top: 80px;
+    	background-color: $aqua;
+    	z-index: -1;
+	}
+
+}
+.promo-addit{
+	color: $aqua;
+	font-size: 53px;	
+}
+.img-salad{
+	width: 754px;
+	position: absolute;
+}
+.btn-login{
+  font-size: 25px;
+
+  &::after{
+    content: '';
+    position: absolute;
+    left: 37px;
+    top: 24px;
+    width: 160px;
+    height: 31px;
+    background-color: $aqua;
+    z-index: -1;
+  }
+
+}
+.btn-send{
+  font-size: 20px;
+  margin-top: 20px;
+  align-self: flex-start;
+
+  &::after{
+    content: '';
+    position: absolute;
+    left: 95%;
+    top: 40px;
+    width: 48px;
+    height: 17px;
+    background-color: $aqua;
+    z-index: -1;
+  }
+
 }
