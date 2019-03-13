@@ -1,3 +1,74 @@
 .our-platform{
 	margin-top: 142px;
+	position: relative;
+
+	&::after{
+		content: '';
+		position: absolute;
+		height: 26px;
+		width: 59px;
+		top: -100px;
+		left: -60px;
+		background-color: $aqua;
+		z-index: -1;
+	}
+
+	.default-title{
+		position: relative;
+
+		&::after{
+			content: '';
+			position: absolute;
+			height: 26px;
+			width: 262px;
+			right: -160px;
+			top: 45px;
+			background-color: $aqua;
+			z-index: -1;
+		}
+
+	}
+
+	.laptop-content{
+		margin-top: 80px;
+		margin-left: 135px;
+	}
+
+	.our-platform-list {
+		margin-top: 50px;
+
+		& li{
+		font-size: 27px;
+
+			& + li{
+				margin-top: 50px;
+			}
+
+			& .list-num{
+				font-size: 29px;
+				font-family: "CenturyGothicBold";
+
+				&.badge-item{
+
+					position: relative;
+
+					&::after{
+						content: '';
+						position: absolute;
+						height: 26px;
+						width: 25px;
+						left: -15px;
+						top: 10px;
+						background-color: $aqua;
+						z-index: -1;
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
 }

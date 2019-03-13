@@ -44,17 +44,30 @@
 <section class="how-it-works">
     <span class="default-title">Как это работает?</span>
     <div class="d-flex justify-content-around order-line position-relative">
-        <div class="order">
+        <div class="order text-center d-flex flex-column position-relative">
             <img src="img/order.png" alt="">
+            <div class="desc position-absolute">
+                <span>Сервис заказа</span>
+                <p>Сотрудник вашего офиса делает заказ на платформе</p>
+            </div>
+            
         </div>
-        <div class="kitchen">
+        <div class="kitchen position-relative text-center">
             <img src="img/kitchen.png" alt="">
+            <span class="position-absolute">Кухня</span>
+            <p class="position-absolute d-block">Кухня готовит заказ из свежих ингридиентов</p>
         </div>
-        <div class="delivery">
+        <div class="delivery text-center d-flex flex-column position-relative">
             <img src="img/courier.png" alt="">
+            <div class="desc position-absolute">
+                <span>Доставка</span>
+                <p>В установленное время, курьер доставляет заказ</p>
+            </div>
         </div>
-        <div class="client">
+        <div class="client position-relative text-center">
             <img src="img/customer.png" alt="">
+            <span class="position-absolute">Клиент</span>
+            <p class="position-absolute d-block">Ваши сотрудники лакомятся любимыми блюдами</p>
         </div>
         <img class="position-absolute line" src="img/path.svg" alt="">
     </div>
@@ -73,10 +86,77 @@
 
 <section class="our-platform">
     <div class="row">
-        <div class="col-lg-6">
-            <img src="img/" alt="">
+        <div class="col-lg-7">
+            <div class="position-relative">
+                <img class="laptop position-absolute" src="img/laptop.png" alt="">
+                <img class="laptop-content position-absolute" src="img/laptop_im.png" alt="">
+            </div>
+            
         </div>
-        <div class="col-lg-6"></div>
+        <div class="col-lg-5 d-flex flex-column">
+            <span class="default-title align-self-center">Наша платформа</span>
+            <ul class="our-platform-list">
+                <li>
+                    <span class="list-num mr-3">1.</span>
+                    <span>Панель администратора, который контролирует всё</span>
+                </li>
+                <li>
+                    <span class="list-num mr-3">2.</span>
+                    <span>Личный кабинет каждого сотрудника</span>
+                </li>
+                <li>
+                    <span class="list-num badge-item mr-3">3.</span>
+                    <span>Отображение денежного баланса</span>
+                </li>
+                <li>
+                    <span class="list-num mr-3">4.</span>
+                    <span>История выполненых заказов</span>
+                </li>
+                <li>
+                    <span class="list-num mr-3">5.</span>
+                    <span>Календарь будущих заказов</span>
+                </li>
+                <li>
+                    <span class="list-num mr-3">6.</span>
+                    <span>Интерактивные предложения</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="contacts">
+    <div class="row">
+        <div class="col-lg-5 d-flex flex-column justify-content-center">
+            <div class="contact d-flex flex-column">
+                <span>Телефон</span>
+                <span class="mob">+380 63 571 87</span>
+            </div>
+            <div class="contact d-flex flex-column">
+                <span>E-mail</span>
+                <span class="email">info@stolovka.delivery</span>
+            </div>
+        </div>
+        <div class="col-lg-7 text-center">
+            <span class="default-title">Вам есть что сказать?</span>
+            <form>
+                <div class="d-flex justify-content-between">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="mainNameInput" placeholder="Ваше имя">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="mainMobInput" placeholder="Ваш телефон">
+                    </div> 
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control" id="mainMessageInput" rows="3" placeholder="Ваш комментарий"></textarea>
+                </div>   
+                <button type="submit" class="btn btn-contacts-send d-flex align-items-center">
+                    <span>Отправить</span> 
+                    <img class="ml-3" src="img/btn-arrow.svg" alt="">
+                </button>      
+            </form>
+        </div>
     </div>
 </section>
 

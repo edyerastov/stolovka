@@ -3,12 +3,17 @@
   font-family: "Gost";
   src: url("../fonts/gost-type-b.ttf");
 }
+@font-face {
+  font-family: "CenturyGothicBold";
+  src: url("../fonts/century-gothic-bold.ttf");
+}
 
 body{
   margin: 30px 60px 15px 60px;
   max-width: 1920px;
   padding: 0;
   font-family: "Gost";
+  font-size: 16px;
 }
 *{
   -webkit-box-sizing: border-box;
@@ -61,5 +66,8 @@ textarea{
   border: none;
   line-height: 0;
   position: relative;
+}
+.btn:hover{
+  outline: 4px solid #000;
 }
 

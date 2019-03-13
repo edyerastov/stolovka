@@ -1,19 +1,94 @@
 .how-it-works{
 	margin-top: 100px;
+	position: relative;
+
+	&::after{
+		content: '';
+		position: absolute;
+		height: 31px;
+		width: 40px;
+		right: -60px;
+		top: 0;
+		background-color: $aqua;
+		z-index: -1;
+	}
+
+	&>.default-title{
+		position: relative;
+
+		&::after{
+			content: '';
+			position: absolute;
+			height: 17px;
+			width: 129px;
+			right: -50px;
+			top: 40px;
+			background-color: $aqua;
+			z-index: -1;
+		}
+
+	}
 
 	.order-line{
 		margin-top: 90px;
 
 		.line{
 			right: 0;
-			left: 0;
+			left: -100px;
 			margin: auto;
 			top: -50px;
 		}
 
-	.kitchen{
-		margin-top: 70px;
-	}
+		.kitchen{
+			margin-top: 70px;
+		}
+
+		.delivery{
+			margin-top: 80px;
+		}
+
+		.client{
+			margin-top: 60px;
+		}
+
+		& span{
+			font-size: 35px;
+			text-transform: uppercase;
+		}
+
+		& p{
+			font-size: 25px;
+			line-height: 29px;
+		}
+
+		& .order .desc,
+		& .delivery .desc{
+			margin-top: 300px;
+			width: 320px;
+		}
+
+		& .kitchen p{
+			width: 270px;
+			margin-top: 100px;
+			position: relative;
+
+			&::after{
+				content: '';
+				position: absolute;
+				height: 22px;
+				width: 89px;
+				left: -65px;
+				top: -10px;
+				background-color: $aqua;
+				z-index: -1;
+			}
+
+		}
+
+		& .client p{
+			margin-top: 40px;
+			width: 310px;
+		}
 
 	}
 

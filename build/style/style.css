@@ -2,11 +2,16 @@
   font-family: "Gost";
   src: url("../fonts/gost-type-b.ttf"); }
 
+@font-face {
+  font-family: "CenturyGothicBold";
+  src: url("../fonts/century-gothic-bold.ttf"); }
+
 body {
   margin: 30px 60px 15px 60px;
   max-width: 1920px;
   padding: 0;
-  font-family: "Gost"; }
+  font-family: "Gost";
+  font-size: 16px; }
 
 * {
   -webkit-box-sizing: border-box;
@@ -57,6 +62,9 @@ textarea {
   border: none;
   line-height: 0;
   position: relative; }
+
+.btn:hover {
+  outline: 4px solid #000; }
 
 .logo {
   position: relative; }
@@ -124,16 +132,67 @@ textarea {
     z-index: -1; }
 
 .how-it-works {
-  margin-top: 100px; }
+  margin-top: 100px;
+  position: relative; }
+  .how-it-works::after {
+    content: '';
+    position: absolute;
+    height: 31px;
+    width: 40px;
+    right: -60px;
+    top: 0;
+    background-color: #2EC2A8;
+    z-index: -1; }
+  .how-it-works > .default-title {
+    position: relative; }
+    .how-it-works > .default-title::after {
+      content: '';
+      position: absolute;
+      height: 17px;
+      width: 129px;
+      right: -50px;
+      top: 40px;
+      background-color: #2EC2A8;
+      z-index: -1; }
   .how-it-works .order-line {
     margin-top: 90px; }
     .how-it-works .order-line .line {
       right: 0;
-      left: 0;
+      left: -100px;
       margin: auto;
       top: -50px; }
     .how-it-works .order-line .kitchen {
       margin-top: 70px; }
+    .how-it-works .order-line .delivery {
+      margin-top: 80px; }
+    .how-it-works .order-line .client {
+      margin-top: 60px; }
+    .how-it-works .order-line span {
+      font-size: 35px;
+      text-transform: uppercase; }
+    .how-it-works .order-line p {
+      font-size: 25px;
+      line-height: 29px; }
+    .how-it-works .order-line .order .desc,
+    .how-it-works .order-line .delivery .desc {
+      margin-top: 300px;
+      width: 320px; }
+    .how-it-works .order-line .kitchen p {
+      width: 270px;
+      margin-top: 100px;
+      position: relative; }
+      .how-it-works .order-line .kitchen p::after {
+        content: '';
+        position: absolute;
+        height: 22px;
+        width: 89px;
+        left: -65px;
+        top: -10px;
+        background-color: #2EC2A8;
+        z-index: -1; }
+    .how-it-works .order-line .client p {
+      margin-top: 40px;
+      width: 310px; }
 
 .menu {
   margin-top: 180px; }
@@ -141,4 +200,99 @@ textarea {
     font-size: 76px; }
 
 .our-platform {
-  margin-top: 142px; }
+  margin-top: 142px;
+  position: relative; }
+  .our-platform::after {
+    content: '';
+    position: absolute;
+    height: 26px;
+    width: 59px;
+    top: -100px;
+    left: -60px;
+    background-color: #2EC2A8;
+    z-index: -1; }
+  .our-platform .default-title {
+    position: relative; }
+    .our-platform .default-title::after {
+      content: '';
+      position: absolute;
+      height: 26px;
+      width: 262px;
+      right: -160px;
+      top: 45px;
+      background-color: #2EC2A8;
+      z-index: -1; }
+  .our-platform .laptop-content {
+    margin-top: 80px;
+    margin-left: 135px; }
+  .our-platform .our-platform-list {
+    margin-top: 50px; }
+    .our-platform .our-platform-list li {
+      font-size: 27px; }
+      .our-platform .our-platform-list li + li {
+        margin-top: 50px; }
+      .our-platform .our-platform-list li .list-num {
+        font-size: 29px;
+        font-family: "CenturyGothicBold"; }
+        .our-platform .our-platform-list li .list-num.badge-item {
+          position: relative; }
+          .our-platform .our-platform-list li .list-num.badge-item::after {
+            content: '';
+            position: absolute;
+            height: 26px;
+            width: 25px;
+            left: -15px;
+            top: 10px;
+            background-color: #2EC2A8;
+            z-index: -1; }
+
+.contacts {
+  margin-top: 130px; }
+  .contacts .contact + .contact {
+    margin-top: 68px; }
+  .contacts .mob, .contacts .email {
+    font-size: 49px;
+    position: relative; }
+  .contacts .mob::after {
+    content: '';
+    position: absolute;
+    height: 20px;
+    width: 284px;
+    left: -17px;
+    top: 40px;
+    background-color: #2EC2A8;
+    z-index: -1; }
+  .contacts .email::after {
+    content: '';
+    position: absolute;
+    height: 20px;
+    width: 258px;
+    left: 190px;
+    top: 40px;
+    background-color: #2EC2A8;
+    z-index: -1; }
+  .contacts form {
+    width: 960px;
+    margin: auto; }
+  .contacts input {
+    width: 380px;
+    height: 55px; }
+  .contacts textarea {
+    height: 158px; }
+  .contacts input, .contacts textarea {
+    border: 2px solid;
+    -webkit-border-radius: 0;
+            border-radius: 0; }
+  .contacts .btn.btn-contacts-send {
+    background-color: initial;
+    font-size: 18px;
+    margin: 30px auto 0; }
+    .contacts .btn.btn-contacts-send::after {
+      content: '';
+      position: absolute;
+      height: 28px;
+      width: 110px;
+      left: -100px;
+      top: 40px;
+      background-color: #2EC2A8;
+      z-index: -1; }

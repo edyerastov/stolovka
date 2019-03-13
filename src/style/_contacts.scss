@@ -1,0 +1,71 @@
+.contacts{
+	margin-top: 130px;
+
+	.contact + .contact{
+		margin-top: 68px;
+	}
+
+	& .mob, & .email{
+		font-size: 49px;
+		position: relative;
+	}
+
+	& .mob::after{
+		content: '';
+		position: absolute;
+		height: 20px;
+		width: 284px;
+		left: -17px;
+		top: 40px;
+		background-color: $aqua;
+		z-index: -1;
+	}
+	& .email::after{
+		content: '';
+		position: absolute;
+		height: 20px;
+		width: 258px;
+		left: 190px;
+		top: 40px;
+		background-color: $aqua;
+		z-index: -1;
+	}
+
+	& form{
+		width: 960px;
+		margin: auto;
+	}
+
+	& input{
+		width: 380px;
+		height: 55px;
+	}
+
+	& textarea{
+		height: 158px;
+	}
+
+	& input, & textarea{
+		border: 2px solid;
+		border-radius: 0;
+	}
+
+	.btn.btn-contacts-send{
+		background-color: initial;
+		font-size: 18px;
+		margin: 30px auto 0;
+
+		&::after{
+			content: '';
+			position: absolute;
+			height: 28px;
+			width: 110px;
+			left: -100px;
+			top: 40px;
+			background-color: $aqua;
+			z-index: -1;
+		}
+
+	}
+
+}
