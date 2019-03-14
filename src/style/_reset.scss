@@ -7,10 +7,12 @@
   font-family: "CenturyGothicBold";
   src: url("../fonts/century-gothic-bold.ttf");
 }
+@font-face {
+  font-family: "LucidaGrande";
+  src: url("../fonts/lucida-grande.ttf")
+}
 
 body{
-  margin: 30px 60px 15px 60px;
-  max-width: 1920px;
   padding: 0;
   font-family: "Gost";
   font-size: 16px;
@@ -34,6 +36,7 @@ a{
 }
 a:hover{
   text-decoration: none;
+  color: inherit;
 }
 img{
   max-width: 100%;
@@ -46,14 +49,27 @@ input[type="submit"]{
   cursor: pointer;
   border: none;
 }
-input{
-  border: none;
+input, textarea{
+  border: 2px solid #000!important;
+  border-radius: 0!important;
 }
 textarea{
   resize: none;
   border: none;
   -webkit-appearance: none;
   overflow: auto;
+}
+button{
+  background-color: initial;
+  border: none;
+
+  &:focus{
+    outline: none;
+  }
+
+}
+.page-container{
+  margin: 30px 60px 55px 60px;
 }
 
 .default-title{
@@ -66,8 +82,83 @@ textarea{
   border: none;
   line-height: 0;
   position: relative;
+
+  &:focus{
+    outline: 2px solid #000!important;
+    box-shadow: none!important;
+  }
+
 }
-.btn:hover{
+.btn:hover, button:hover{
   outline: 4px solid #000;
 }
+.footer{
+  padding: 15px 0;
+  border-top: 2px solid;
+  width: 100%;
+}
+.copyright{
+  font-family: "LucidaGrande";
+  font-size: 21px;
+}
+.mobile{
+  display: none!important;
+}
+.overflow{
+  overflow: hidden;
+}
 
+// MODAL
+
+#sendModal{
+
+  .modal-dialog{
+    top: 50%;
+    transform: translateY(-50%);
+    width: 640px;
+    height: 370px;
+    max-width: 100%;
+
+    .modal-content{
+      border-radius: 0;
+      height: 100%;
+      width: 100%;
+      background: url('../img/cake.png') center 90% no-repeat #fff;
+      z-index: -2;
+
+      .modal-body{
+        padding: 80px 50px 50px 50px;
+
+        .inputs + .inputs{
+          margin-top: 20px;
+        }
+
+        input{
+          width: 243px;
+        }
+
+        button{
+          width: 195px;
+          margin: 20px auto 0 auto;
+          position: relative;
+
+            &::after {
+              content: '';
+              position: absolute;
+              height: 40px;
+              width: 110px;
+              left: -90px;
+              top: 20px;
+              background-color: $aqua;
+              z-index: -1;
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+}

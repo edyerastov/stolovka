@@ -33,12 +33,6 @@ gulp.task('browser-sync', function() { // Создаем таск browser-sync
     });
 });
 
-gulp.task('scripts', function() {
-    return gulp.src('src/js/**/*.js')
-        .pipe(concat('scripts.min.js')) // Собираем их в кучу в новом файле plugins.min.js
-        .pipe(gulp.dest('build/js')); // Выгружаем в папку app/js
-});
-
 gulp.task('css-libs', ['css'], function() {
     return gulp.src('build/style/style.css') // Выбираем файл для минификации
         .pipe(cssnano()) // Сжимаем
@@ -46,9 +40,8 @@ gulp.task('css-libs', ['css'], function() {
         .pipe(gulp.dest('build/style')); // Выгружаем в папку app/css
 });
 
-gulp.task('watch', ['browser-sync', 'css', 'scripts', 'sass'], function() {
+gulp.task('watch', ['browser-sync', 'css', 'sass'], function() {
     gulp.watch('src/style/**/*.scss', ['sass']); // Наблюдение за css файлами в папке css
-    gulp.watch('src/js/**/*.js', ['scripts']);
     gulp.watch('src/style/**/*.scss', browserSync.reload);
     gulp.watch('build/*.html', browserSync.reload); // Наблюдение за HTML файлами в корне проекта
     gulp.watch('build/js/**/*.js', browserSync.reload);   // Наблюдение за JS файлами в папке js

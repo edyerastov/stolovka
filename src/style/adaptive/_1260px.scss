@@ -1,0 +1,355 @@
+@media screen and (max-width: 1600px) {
+	.page-container {
+	    margin: 30px 40px 55px 40px;
+	}
+	.btn{
+		padding: 10px 14px;
+		
+		img{
+			width: 22px;
+		}
+
+	}
+	.btn-login {
+	    font-size: 20px;
+
+		&::after {
+		    top: 18px;
+		    width: 110px;
+		    height: 25px;
+		}
+
+	}
+	.btn-send {
+	    font-size: 16px;
+
+		&::after {
+		    left: 93%;
+		    top: 27px;
+		}
+
+	}
+	.logo {
+
+		img{
+			height: 54px;
+		}
+
+		&::after {
+		    height: 21px;
+		    width: 32px;
+		    left: -20px;
+		}
+
+	}
+	.promo-title {
+	    font-size: 55px;
+	    margin-top: 57px;
+	    margin-bottom: 12px;
+	    line-height: 1.2;
+
+		&::after {
+		    height: 20px;
+		    width: 180px;
+		    left: 440px;
+		    top: 50px;
+		}
+
+	}
+	.img-salad{
+		width: 450px;
+	}
+	.promo-addit {
+	    font-size: 32px;
+	}
+	.default-title {
+	    font-size: 36px;
+	}
+	.how-it-works {
+
+		&::after {
+		    right: -40px;
+		}
+
+		& > .default-title::after {
+		    width: 90px;
+		    right: -30px;
+		    top: 27px;
+		}
+
+		.order-line .line {
+			width: 900px;
+		    left: -60px;
+
+		}
+
+		.order-line{
+			justify-content: space-between!important;
+			margin-top: 70px;
+			padding: 0 20px;
+
+			.order {
+
+				img{
+					width: 190px;
+				}
+
+				.desc{
+					margin-top: 200px;
+					width: 280px;
+					left: -20px;
+				}
+
+			}
+
+			.kitchen{
+				margin-top: 30px;
+
+				img{
+					width: 135px;
+				}
+
+				span{
+					left: 115px;
+				}
+
+				p{
+					width: 245px;
+					margin-top: 60px;
+					left: -40px;
+
+					&::after {
+					    height: 15px;
+					    width: 60px;
+					    left: -15px;
+					    top: 0;
+					}
+
+				}
+
+			}
+
+			.delivery{
+				margin-top: 50px;
+
+				img{
+					width: 190px;
+				}
+
+				.desc{
+					margin-top: 180px;
+					width: 230px;
+					left: -20px;
+				}
+
+			}
+
+			.client{
+				margin-top: 20px;
+
+				&::after {
+				    height: 20px;
+				    width: 80px;
+				    left: 20px;
+				    top: 80px;
+				}
+
+				img{
+					width: 145px;
+				}
+
+				span{
+					left: 80px;
+					top: -20px;
+				}
+
+				p{
+					margin-top: 10px;
+					width: 250px;
+					left: -100px;
+				}
+
+			}
+
+			.line{
+				width: 900px;
+				left: -20px;
+			}
+
+			span {
+			    font-size: 25px;
+			}
+
+			p {
+			    font-size: 20px;
+			    line-height: 29px;
+			}
+
+		}
+
+	}
+
+	.menu{
+		margin-top: 140px;
+		font-size: 18px;
+
+		.menu-title{
+			font-size: 50px;
+
+			&::after {
+			    height: 30px;
+			    width: 70px;
+			    left: -25px;
+			    top: 30px;
+			}
+
+		}
+
+		.slider-control a .img-wraper {
+		    width: 55px;
+		    margin-right: 5px;
+
+			img{
+				height: 40px;
+			}
+
+		}
+		
+		#menu-tabContent, .row {
+		    height: 342px;
+
+			.menu-slider img {
+			    height: 342px;
+			}
+
+		}
+
+		.menu-count {
+		    padding-left: 37px;
+
+		    .menu-count-title::after {
+			    height: 13px;
+			    width: 90px;
+			    left: -10px;
+			    top: 15px;
+			}
+
+		    li + li {
+			    margin-top: 15px;
+			}
+
+			.count{
+				font-size: 32px;
+			}
+
+			.marker {
+			    width: 18px;
+			    height: 18px;
+			}
+
+		}
+
+	}
+
+	.our-platform {
+
+		&::after {
+		    left: -40px;
+		}
+
+		.default-title::after {
+		    height: 20px;
+		    width: 180px;
+		    right: -110px;
+		    top: 35px;
+		}
+
+		.laptop-content {
+		    margin-top: 60px;
+		    margin-left: 94px;
+		    width: 491px;
+		}
+
+		.our-platform-list {
+		    margin-top: 20px;
+
+			li{
+				font-size: 18px;
+
+				& + li{
+					margin-top: 35px;
+				}
+
+				.list-num{
+					font-size: 20px;
+
+					&.badge-item::after {
+					    height: 18px;
+					    width: 18px;
+					    left: -10px;
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+	.contacts{
+
+		& .mob, & .email{
+			font-size: 35px;
+		}
+
+		.mob::after {
+		    height: 17px;
+		    width: 200px;
+		    left: -17px;
+		    top: 22px;
+		}
+
+		.email::after {
+		    height: 17px;
+		    width: 170px;
+		    left: 140px;
+		    top: 30px;
+		}
+
+		form {
+		    width: 100%;
+		}
+
+		input {
+		    width: 300px;
+		    height: 40px;
+		}
+
+		textarea {
+		    height: 120px;
+		}
+
+		.btn.btn-contacts-send {
+		    margin: 20px auto 0;
+
+			&::after {
+			    width: 90px;
+			    left: -80px;
+			    top: 25px;
+			}
+
+		}
+
+	}
+
+	.footer {
+	    padding: 8px 0;
+
+		.copyright {
+		    font-size: 16px;
+		}
+
+	}
+	
+}

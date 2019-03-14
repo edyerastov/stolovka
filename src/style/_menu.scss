@@ -1,8 +1,105 @@
 .menu{
 	margin-top: 180px;
+	font-size: 30px;
+
+	& .row{
+		height: 500px;
+	}
 
 	.menu-title{
 		font-size: 76px;
+		position: relative;
+
+		&::after{
+			content: '';
+			position: absolute;
+			height: 45px;
+			width: 110px;
+			left: -40px;
+			top: 40px;
+			background-color: $aqua;
+			z-index: -1;
+		}	
+
+	}
+
+	.slider-control {
+		border-right: 2px solid;
+		height: 100%;
+
+		& a{
+			text-align: left;
+			text-transform: uppercase;
+			padding: 0!important;
+
+			& + a{
+				margin-top: 20px;
+			}
+
+			&:hover{
+				cursor: pointer;
+				text-decoration: underline;
+			}
+
+			&.active{
+				text-decoration: underline;
+			}
+
+			& .img-wraper{
+				width: 80px;
+				display: inline-block;
+				margin-right: 10px;
+			}
+
+		}
+	}
+
+	#menu-tabContent{
+		height: 500px;
+	}
+
+	.menu-slider img{
+		height: 500px;
+		object-fit: contain;
+	}
+
+	.menu-count{
+		border-left: 2px solid;
+		padding-left: 67px;
+		height: 100%;
+
+		.menu-count-title{
+			text-transform: uppercase;
+			position: relative;
+
+			&::after{
+				content: '';
+				position: absolute;
+				height: 17px;
+				width: 150px;
+				left: -20px;
+				top: 20px;
+				background-color: $aqua;
+				z-index: -1;
+			}	
+
+		}
+
+		& li + li{
+			margin-top: 26px;
+		}
+
+		.marker{
+			width: 23px;
+			height: 23px;
+			background-color: $aqua;
+			display: inline-block;
+		}
+
+		.count{
+			font-size: 42px;
+		}
+
 	}
 
 }

@@ -17,152 +17,311 @@
 </head>
 
 <body>
+<div class="overflow">
+    <div class="page-container">
 
-<section class="promo">
-    <div class="header d-flex justify-content-between align-items-center">
-        <div class="logo"><img src="img/logo.png" alt=""></div>
-        <div class="btn btn-login d-flex align-items-center">
-            <span>Войти</span> 
-            <img class="ml-3" src="img/btn-arrow.svg" alt="">
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-lg-7 d-flex flex-column">
-            <span class="promo-title">Сервис доставки обедов для вашего офиса</span>
-            <span class="promo-addit ml-auto">Всё, что хочешь и компот!</span>
-            <div class="btn btn-send d-flex align-items-center">
-                <span>Отправить заявку</span> 
-                <img class="ml-3" src="img/btn-arrow.svg" alt="">
+        <section class="promo">
+            <div class="header d-flex justify-content-between align-items-center">
+                <div class="logo"><img src="img/logo.png" alt=""></div>
+                <div class="btn btn-login d-flex align-items-center">
+                    <span>Войти</span> 
+                    <img class="ml-3" src="img/btn-arrow.svg" alt="">
+                </div>
             </div>
-        </div>
-        <div class="col-lg-5 position_relative">
-            <img class="img-salad" src="img/img_salad.png" alt="">
-        </div>
-    </div>
-</section>
+            <div class="row">
+                <div class="col-lg-7 d-flex flex-column">
+                    <span class="promo-title">Сервис доставки обедов для вашего офиса</span>
+                    <span class="promo-addit ml-auto">Всё, что хочешь и компот!</span>
+                    <button class="btn btn-send d-flex align-items-center" type="button" data-toggle="modal" data-target="#sendModal">
+                        <span>Отправить заявку</span> 
+                        <img class="ml-3" src="img/btn-arrow.svg" alt="">
+                    </button>
+                </div>
+                <div class="col-lg-5 position-relative">
+                    <img class="img-salad" src="img/img_salad.png" alt="">
+                </div>
+            </div>
+        </section>
 
-<section class="how-it-works">
-    <span class="default-title">Как это работает?</span>
-    <div class="d-flex justify-content-around order-line position-relative">
-        <div class="order text-center d-flex flex-column position-relative">
-            <img src="img/order.png" alt="">
-            <div class="desc position-absolute">
-                <span>Сервис заказа</span>
-                <p>Сотрудник вашего офиса делает заказ на платформе</p>
-            </div>
-            
-        </div>
-        <div class="kitchen position-relative text-center">
-            <img src="img/kitchen.png" alt="">
-            <span class="position-absolute">Кухня</span>
-            <p class="position-absolute d-block">Кухня готовит заказ из свежих ингридиентов</p>
-        </div>
-        <div class="delivery text-center d-flex flex-column position-relative">
-            <img src="img/courier.png" alt="">
-            <div class="desc position-absolute">
-                <span>Доставка</span>
-                <p>В установленное время, курьер доставляет заказ</p>
-            </div>
-        </div>
-        <div class="client position-relative text-center">
-            <img src="img/customer.png" alt="">
-            <span class="position-absolute">Клиент</span>
-            <p class="position-absolute d-block">Ваши сотрудники лакомятся любимыми блюдами</p>
-        </div>
-        <img class="position-absolute line" src="img/path.svg" alt="">
-    </div>
-</section>
-
-<section class="menu">
-    <span class="menu-title">Меню</span>
-    <div class="row">
-        <div class="col-lg-3">
-            
-        </div>
-        <div class="col-lg-6"></div>
-        <div class="col-lg-3"></div>
-    </div>
-</section>
-
-<section class="our-platform">
-    <div class="row">
-        <div class="col-lg-7">
-            <div class="position-relative">
-                <img class="laptop position-absolute" src="img/laptop.png" alt="">
-                <img class="laptop-content position-absolute" src="img/laptop_im.png" alt="">
-            </div>
-            
-        </div>
-        <div class="col-lg-5 d-flex flex-column">
-            <span class="default-title align-self-center">Наша платформа</span>
-            <ul class="our-platform-list">
-                <li>
-                    <span class="list-num mr-3">1.</span>
-                    <span>Панель администратора, который контролирует всё</span>
-                </li>
-                <li>
-                    <span class="list-num mr-3">2.</span>
-                    <span>Личный кабинет каждого сотрудника</span>
-                </li>
-                <li>
-                    <span class="list-num badge-item mr-3">3.</span>
-                    <span>Отображение денежного баланса</span>
-                </li>
-                <li>
-                    <span class="list-num mr-3">4.</span>
-                    <span>История выполненых заказов</span>
-                </li>
-                <li>
-                    <span class="list-num mr-3">5.</span>
-                    <span>Календарь будущих заказов</span>
-                </li>
-                <li>
-                    <span class="list-num mr-3">6.</span>
-                    <span>Интерактивные предложения</span>
-                </li>
-            </ul>
-        </div>
-    </div>
-</section>
-
-<section class="contacts">
-    <div class="row">
-        <div class="col-lg-5 d-flex flex-column justify-content-center">
-            <div class="contact d-flex flex-column">
-                <span>Телефон</span>
-                <span class="mob">+380 63 571 87</span>
-            </div>
-            <div class="contact d-flex flex-column">
-                <span>E-mail</span>
-                <span class="email">info@stolovka.delivery</span>
-            </div>
-        </div>
-        <div class="col-lg-7 text-center">
-            <span class="default-title">Вам есть что сказать?</span>
-            <form>
-                <div class="d-flex justify-content-between">
-                    <div class="form-group">
-                        <input type="text" class="form-control" id="mainNameInput" placeholder="Ваше имя">
+        <section class="how-it-works">
+            <span class="default-title">Как это работает?</span>
+            <div class="d-flex justify-content-around order-line position-relative">
+                <div class="order text-center d-flex flex-column position-relative">
+                    <img src="img/order.png" alt="">
+                    <div class="desc position-absolute">
+                        <span>Сервис заказа</span>
+                        <p>Сотрудник вашего офиса делает заказ на платформе</p>
                     </div>
-                    <div class="form-group">
-                        <input type="text" class="form-control" id="mainMobInput" placeholder="Ваш телефон">
-                    </div> 
+                    
+                </div>
+                <div class="kitchen position-relative text-center">
+                    <img src="img/kitchen.png" alt="">
+                    <span class="position-absolute">Кухня</span>
+                    <p class="position-absolute d-block">Кухня готовит заказ из свежих ингридиентов</p>
+                </div>
+                <div class="delivery text-center d-flex flex-column position-relative">
+                    <img src="img/courier.png" alt="">
+                    <div class="desc position-absolute">
+                        <span>Доставка</span>
+                        <p>В установленное время, курьер доставляет заказ</p>
+                    </div>
+                </div>
+                <div class="client position-relative text-center">
+                    <img src="img/customer.png" alt="">
+                    <span class="position-absolute">Клиент</span>
+                    <p class="position-absolute d-block">Ваши сотрудники лакомятся любимыми блюдами</p>
+                </div>
+                <img class="position-absolute line desctop" src="img/path.svg" alt="">
+                <img class="position-absolute line mobile" src="img/mob/path.png" alt="">
+            </div>
+
+        </section>
+
+        <section class="menu">
+            <span class="menu-title">Меню</span>
+            <div class="row">
+                <div class="col-lg-3 col-12">
+                    <div class="nav slider-control flex-column" id="menu-tabs" role="tablist" aria-orientation="vertical">
+                        <a class="nav-link active" id="main-dishes-tab" data-toggle="pill" href="#main-dishes" role="tab" aria-controls="main-dishes" aria-selected="true">
+                            <div class="img-wraper"><img src="img/main_dish.png" alt=""></div>
+                            <span>Основные блюда</span>
+                        </a>
+                        <a class="nav-link" id="salads-tab" data-toggle="pill" href="#salads" role="tab" aria-controls="salads" aria-selected="false">
+                            <div class="img-wraper"><img src="img/salad.png" alt=""></div>
+                            <span>Свежие салаты</span>
+                        </a>
+                        <a class="nav-link" id="sandwiches-tab" data-toggle="pill" href="#sandwiches" role="tab" aria-controls="sandwiches" aria-selected="false">
+                            <div class="img-wraper"><img src="img/sandwich.png" alt=""></div>
+                            <span>Хрустящие сендвичи</span>
+                        </a>
+                        <a class="nav-link" id="desserts-tab" data-toggle="pill" href="#desserts" role="tab" aria-controls="dessert" aria-selected="false">
+                            <div class="img-wraper"><img src="img/dessert.png" alt=""></div>
+                            <span>Сладкие десерты</span>
+                        </a>
+                        <a class="nav-link" id="drinks-tab" data-toggle="pill" href="#drinks" role="tab" aria-controls="drinks" aria-selected="false">
+                            <div class="img-wraper"><img src="img/drink.png" alt=""></div>
+                            <span>Освежающие напитки</span>
+                        </a>
+                        <a class="nav-link" id="snacks-tab" data-toggle="pill" href="#snacks" role="tab" aria-controls="snacks" aria-selected="false">
+                            <div class="img-wraper"><img src="img/snack.png" alt=""></div>
+                            <span>Легкие закуски</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12">
+                    <div class="tab-content" id="menu-tabContent">
+                        <div class="tab-pane fade show active" id="main-dishes" role="tabpanel" aria-labelledby="main-dishes-tab">
+                            <div class="menu-slider owl-carousel">
+                                <img src="img/slider/main-1-min.jpg" alt="">
+                                <img src="img/slider/main-2-min.jpg" alt="">
+                                <img src="img/slider/main-3-min.jpg" alt="">
+                                <img src="img/slider/main-4-min.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="salads" role="tabpanel" aria-labelledby="salads-tab">
+                            <div class="menu-slider owl-carousel">
+                                <img src="img/slider/salad-1-min.jpg" alt="">
+                                <img src="img/slider/salad-2-min.jpg" alt="">
+                                <img src="img/slider/salad-3-min.jpg" alt="">
+                                <img src="img/slider/salad-4-min.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="sandwiches" role="tabpanel" aria-labelledby="sandwiches-tab">
+                            <div class="menu-slider owl-carousel">
+                                <img src="img/slider/sandwich-1-min.jpg" alt="">
+                                <img src="img/slider/sandwich-2-min.jpg" alt="">
+                                <img src="img/slider/sandwich-3-min.jpg" alt="">
+                                <img src="img/slider/sandwich-4-min.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="desserts" role="tabpanel" aria-labelledby="desserts-tab">
+                            <div class="menu-slider owl-carousel">
+                                <img src="img/slider/dessert-1-min.jpg" alt="">
+                                <img src="img/slider/dessert-2-min.jpg" alt="">
+                                <img src="img/slider/dessert-3-min.jpg" alt="">
+                                <img src="img/slider/dessert-4-min.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="drinks" role="tabpanel" aria-labelledby="drinks-tab">
+                            <div class="menu-slider owl-carousel">
+                                <img src="img/slider/main-1-min.jpg" alt="">
+                                <img src="img/slider/main-2-min.jpg" alt="">
+                                <img src="img/slider/main-3-min.jpg" alt="">
+                                <img src="img/slider/main-4-min.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="snacks" role="tabpanel" aria-labelledby="snacks-tab">
+                            <div class="menu-slider owl-carousel">
+                                <img src="img/slider/main-1-min.jpg" alt="">
+                                <img src="img/slider/main-2-min.jpg" alt="">
+                                <img src="img/slider/main-3-min.jpg" alt="">
+                                <img src="img/slider/main-4-min.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-lg-3 col-12">
+                    <div class="menu-count">
+                        
+                        <ul class="menu-count-list">
+                            <li class="menu-count-title">Наше меню насчитывает:</li>
+                            <li>
+                                <span class="marker"></span>
+                                <span class="count">92</span>
+                                <span class="count-desc">блюда</span>
+                            </li>
+                            <li>
+                                <span class="marker"></span>
+                                <span class="count">1013</span>
+                                <span class="count-desc">ингридиентов</span>
+                            </li>
+                            <li>
+                                <span class="marker"></span>
+                                <span class="count">35097</span>
+                                <span class="count-desc">ккалорий</span>
+                            </li>
+                            <li>
+                                <span class="marker"></span>
+                                <span class="count">98675</span>
+                                <span class="count-desc">эндорфинов</span>
+                            </li>
+                            <li>
+                                <span class="marker"></span>
+                                <span class="count">1</span>
+                                <span class="count-desc">эталон качества</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="our-platform">
+            <div class="row">
+                <div class="col-lg-7 col-12">
+                    <div class="desctop">
+                        <img class="laptop" src="img/laptopp.png" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-5 col-12 d-flex flex-column">
+                    <span class="default-title align-self-center">Наша платформа</span>
+                    <div class="mobile text-center mt-4">
+                        <div class="mob-display position-relative">
+                            <img class="phone" src="img/mob/phone.png" alt="">  
+                        </div>
+                        <img class="phone-content position-absolute" src="img/mob/phone_img.png" alt="">
+                    </div>
+                    <ul class="our-platform-list">
+                        <li>
+                            <span class="list-num mr-3">1.</span>
+                            <span>Панель администратора, который<br><span class="br">контролирует всё</span></span>
+                        </li>
+                        <li>
+                            <span class="list-num mr-3">2.</span>
+                            <span>Личный кабинет каждого сотрудника</span>
+                        </li>
+                        <li>
+                            <span class="list-num badge-item mr-3">3.</span>
+                            <span>Отображение денежного баланса</span>
+                        </li>
+                        <li>
+                            <span class="list-num mr-3">4.</span>
+                            <span>История выполненых заказов</span>
+                        </li>
+                        <li>
+                            <span class="list-num mr-3">5.</span>
+                            <span>Календарь будущих заказов</span>
+                        </li>
+                        <li>
+                            <span class="list-num mr-3">6.</span>
+                            <span>Интерактивные предложения</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="contacts">
+            <div class="row">
+                <div class="col-lg-5 col-12 d-flex flex-column justify-content-center">
+                    <div class="contact d-flex flex-column">
+                        <span>Телефон</span>
+                        <span class="mob">+380 63 571 13 87</span>
+                    </div>
+                    <div class="contact d-flex flex-column">
+                        <span>E-mail</span>
+                        <span class="email">info@stolovka.delivery</span>
+                    </div>
+                </div>
+                <div class="col-lg-7 contact-form col-12 text-center">
+                    <span class="default-title">Вам есть что сказать?</span>
+                    <form>
+                        <div class="d-flex justify-content-between inputs">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="mainNameInput" placeholder="Ваше имя">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="mainMobInput" placeholder="Ваш телефон">
+                            </div> 
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" id="mainMessageInput" rows="3" placeholder="Ваш комментарий"></textarea>
+                        </div>   
+                        <button type="submit" class="btn btn-contacts-send d-flex align-items-center">
+                            <span>Отправить</span> 
+                            <img class="ml-3" src="img/btn-arrow.svg" alt="">
+                        </button>      
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </div>
+</div>
+
+
+<section class="footer text-center">
+    <span class="copyright">&copy; Stolovka 2019</span>
+</section>
+
+<!-- Modal -->
+
+<div class="modal fade" id="sendModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <form class="d-flex flex-column">
+            <div class="d-flex justify-content-between inputs">
+                <div class="form-group">
+                    <input type="email" class="form-control" id="modalEmailInput" placeholder="Ваше E-mail">
                 </div>
                 <div class="form-group">
-                    <textarea class="form-control" id="mainMessageInput" rows="3" placeholder="Ваш комментарий"></textarea>
-                </div>   
-                <button type="submit" class="btn btn-contacts-send d-flex align-items-center">
-                    <span>Отправить</span> 
-                    <img class="ml-3" src="img/btn-arrow.svg" alt="">
-                </button>      
-            </form>
-        </div>
+                    <input type="text" class="form-control" id="modalNameInput" placeholder="Вашe имя">
+                </div> 
+            </div>
+            <div class="d-flex justify-content-between inputs">
+                <div class="form-group">
+                    <input type="text" class="form-control" id="modalPhoneInput" placeholder="Ваш телефон">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="modalCompanyInput" placeholder="Компания">
+                </div> 
+            </div>  
+            <button type="submit" class="btn btn-contacts-send d-flex align-items-center justify-content-center">
+                <span>Отправить</span> 
+                <img class="ml-3" src="img/btn-arrow.svg" alt="">
+            </button>      
+        </form>
+      </div>
     </div>
-</section>
+  </div>
+</div>
 
 <script src="js/jquery.js"></script>
 <script src="js/owl.carousel.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 <script src="js/init.js"></script>
-<script src="js/plugins.min.js"></script>
+<script src="js/scripts.min.js"></script>
 </body>
 </html>

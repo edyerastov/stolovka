@@ -49,6 +49,19 @@
 
 		.client{
 			margin-top: 60px;
+			position: relative;
+
+			&::after{
+				content: '';
+				position: absolute;
+				height: 26px;
+				width: 106px;
+				left: 50px;
+				top: 140px;
+				background-color: $aqua;
+				z-index: -1;
+			}			
+
 		}
 
 		& span{
