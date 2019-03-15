@@ -99,40 +99,94 @@ button {
 .overflow {
   overflow: hidden; }
 
-#sendModal .modal-dialog {
+.was-validated .form-control:invalid {
+  border: 2px solid #FF0C0C !important;
+  -webkit-box-shadow: none;
+          box-shadow: none; }
+
+.form-control:focus,
+.was-validated .form-control:invalid:focus,
+.was-validated .form-control:valid:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none; }
+
+.invalid-feedback {
+  top: 5px;
+  left: 105%; }
+
+.modal-dialog {
   top: 50%;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
+  -webkit-transform: translateY(-50%) !important;
+      -ms-transform: translateY(-50%) !important;
+          transform: translateY(-50%) !important;
   width: 640px;
   height: 370px;
   max-width: 100%; }
-  #sendModal .modal-dialog .modal-content {
-    -webkit-border-radius: 0;
-            border-radius: 0;
-    height: 100%;
-    width: 100%;
-    background: url("../img/cake.png") center 90% no-repeat #fff;
-    z-index: -2; }
-    #sendModal .modal-dialog .modal-content .modal-body {
-      padding: 80px 50px 50px 50px; }
-      #sendModal .modal-dialog .modal-content .modal-body .inputs + .inputs {
-        margin-top: 20px; }
-      #sendModal .modal-dialog .modal-content .modal-body input {
-        width: 243px; }
-      #sendModal .modal-dialog .modal-content .modal-body button {
-        width: 195px;
-        margin: 20px auto 0 auto;
-        position: relative; }
-        #sendModal .modal-dialog .modal-content .modal-body button::after {
-          content: '';
-          position: absolute;
-          height: 40px;
-          width: 110px;
-          left: -90px;
-          top: 20px;
-          background-color: #2EC2A8;
-          z-index: -1; }
+
+.modal-content {
+  -webkit-border-radius: 0;
+          border-radius: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -2; }
+  .modal-content .modal-body {
+    padding: 80px 50px 50px 50px; }
+
+#thakYouModal .close {
+  z-index: 5;
+  right: 20px;
+  top: 20px; }
+
+#thakYouModal .modal-content {
+  background: url("../img/paper.png") left 20px no-repeat #fff;
+  position: relative; }
+  #thakYouModal .modal-content::after {
+    content: '';
+    position: absolute;
+    height: 39px;
+    width: 66px;
+    left: 50%;
+    top: 60px;
+    background-color: #2EC2A8B3; }
+  #thakYouModal .modal-content .thak-you-title {
+    font-size: 25px;
+    margin-bottom: 30px; }
+  #thakYouModal .modal-content p {
+    position: relative; }
+    #thakYouModal .modal-content p::after {
+      content: '';
+      position: absolute;
+      height: 19px;
+      width: 76px;
+      right: -5px;
+      top: 5px;
+      background-color: #2EC2A8;
+      z-index: -1; }
+
+#sendModal .close {
+  z-index: 5;
+  right: -30px;
+  top: -10px; }
+
+#sendModal .modal-content {
+  background: url("../img/cake.png") center 90% no-repeat #fff; }
+  #sendModal .modal-content .inputs + .inputs {
+    margin-top: 20px; }
+  #sendModal .modal-content input {
+    width: 243px; }
+  #sendModal .modal-content button {
+    width: 195px;
+    margin: 20px auto 0 auto;
+    position: relative; }
+    #sendModal .modal-content button.btn-contacts-send::after {
+      content: '';
+      position: absolute;
+      height: 40px;
+      width: 110px;
+      left: -90px;
+      top: 20px;
+      background-color: #2EC2A8;
+      z-index: -1; }
 
 .logo {
   position: relative; }
@@ -275,6 +329,20 @@ button {
 .menu {
   margin-top: 180px;
   font-size: 30px; }
+  .menu .slider-left,
+  .menu .slider-right {
+    top: 50%;
+    z-index: 1; }
+  .menu .slider-left {
+    left: 0;
+    -webkit-transform: translateY(-50%) scaleX(-1);
+        -ms-transform: translateY(-50%) scaleX(-1);
+            transform: translateY(-50%) scaleX(-1); }
+  .menu .slider-right {
+    right: 0;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%); }
   .menu .row {
     height: 500px; }
   .menu .menu-title {
@@ -729,6 +797,10 @@ button {
           top: 180px; }
   .menu {
     font-size: 13px; }
+    .menu .slider-left {
+      left: 5px; }
+    .menu .slider-right {
+      right: 5px; }
     .menu #menu-tabs {
       -webkit-box-orient: horizontal !important;
       -webkit-box-direction: normal !important;
@@ -803,16 +875,22 @@ button {
         .contacts .contact-form .btn.btn-contacts-send::after {
           left: -70px;
           top: 15px; }
-  #sendModal .modal-dialog {
+  .modal-dialog {
     width: 100%;
     height: 100vh;
     margin: 0; }
-    #sendModal .modal-dialog .inputs {
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: column;
-          -ms-flex-direction: column;
-              flex-direction: column; }
-      #sendModal .modal-dialog .inputs input {
-        width: 100% !important;
-        padding: 10px; } }
+  #thakYouModal .modal-content {
+    background: url("../img/mob/plane.png") -70px 30px no-repeat #fff; }
+    #thakYouModal .modal-content .modal-body {
+      padding: 80px 10px 100px 10px; }
+    #thakYouModal .modal-content .thak-you-title {
+      font-size: 19px; }
+  #sendModal .inputs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    #sendModal .inputs input {
+      width: 100% !important;
+      padding: 10px; } }
