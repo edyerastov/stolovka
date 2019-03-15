@@ -1,0 +1,85 @@
+@media screen and (min-width: 600px) and (max-width: 991px) {
+	
+	.how-it-works{
+
+		.order{
+			margin-left: 200px!important;
+
+			img{
+				width: 210px!important;
+			}
+
+			.desc {
+			    margin-top: 220px!important;
+			}
+
+		}
+
+		.kitchen{
+
+			img{
+				width: 200px!important;
+				margin-right: 40px!important;
+			}
+
+			p{
+				margin-left: 450px;
+			}
+
+		}
+
+		.delivery{
+			margin-left: 240px!important;
+			margin-top: 80px!important;
+
+			img{
+
+			}
+
+		}
+
+		.client{
+
+			&::after {
+			    left: 280px!important;
+			    top: 100px!important;
+			}
+
+			p{
+				left: 30px!important;
+			}
+
+		}
+
+	}
+
+	.menu{
+		font-size: 18px!important;
+
+		.img-wraper{
+			width: 35px!important;
+
+			img{
+
+				height: 35px!important;
+
+			}
+
+		}
+
+		.menu-count{
+			text-align: center;
+
+			.menu-count-title::after {
+			    left: 30%!important;
+			}
+
+		}
+
+	}
+
+	.our-platform-list{
+		text-align: center;
+	}
+	
+}

@@ -69,7 +69,7 @@ button{
 
 }
 .page-container{
-  margin: 30px 60px 55px 60px;
+  padding: 30px 60px 55px 60px;
 }
 
 .default-title{
@@ -110,51 +110,122 @@ button{
 
 // MODAL
 
+.was-validated .form-control:invalid{
+  border: 2px solid #FF0C0C!important;
+  box-shadow: none;
+}
+.form-control:focus,
+.was-validated .form-control:invalid:focus,
+.was-validated .form-control:valid:focus{
+  box-shadow: none;
+}
+
+.invalid-feedback{
+  top: 5px;
+  left: 105%;
+}
+
+.modal-dialog{
+  top: 50%;
+  transform: translateY(-50%)!important;
+  width: 640px;
+  height: 370px;
+  max-width: 100%;
+}
+.modal-content{
+  border-radius: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -2;
+
+  .modal-body{
+    padding: 80px 50px 50px 50px;
+  }
+
+}
+
+
+#thakYouModal{
+
+  .close{
+    z-index: 5;
+    right: 20px;
+    top: 20px;
+  }
+
+  .modal-content{
+    background: url('../img/paper.png') left 20px no-repeat #fff;
+    position: relative;
+
+    &::after{
+      content: '';
+      position: absolute;
+      height: 39px;
+      width: 66px;
+      left: 50%;
+      top: 60px;
+      background-color: #2EC2A8B3;
+    }
+  
+    .thak-you-title{
+      font-size: 25px;
+      margin-bottom: 30px;
+    }
+
+    p{
+      position: relative;
+
+        &::after{
+        content: '';
+        position: absolute;
+        height: 19px;
+        width: 76px;
+        right: -5px;
+        top: 5px;
+        background-color: $aqua;
+        z-index: -1;
+      }
+
+    }
+
+  }
+
+}
+
 #sendModal{
 
-  .modal-dialog{
-    top: 50%;
-    transform: translateY(-50%);
-    width: 640px;
-    height: 370px;
-    max-width: 100%;
+  .close {
+    z-index: 5;
+    right: -30px;
+    top: -10px;
+  }
 
-    .modal-content{
-      border-radius: 0;
-      height: 100%;
-      width: 100%;
-      background: url('../img/cake.png') center 90% no-repeat #fff;
-      z-index: -2;
+  .modal-content{
+    
+    background: url('../img/cake.png') center 90% no-repeat #fff;
 
-      .modal-body{
-        padding: 80px 50px 50px 50px;
+    .inputs + .inputs{
+      margin-top: 20px;
+    }
 
-        .inputs + .inputs{
-          margin-top: 20px;
-        }
+    input{
+      width: 243px;
+    }
 
-        input{
-          width: 243px;
-        }
+    button{
+      width: 195px;
+      margin: 20px auto 0 auto;
+      position: relative;
 
-        button{
-          width: 195px;
-          margin: 20px auto 0 auto;
-          position: relative;
-
-            &::after {
-              content: '';
-              position: absolute;
-              height: 40px;
-              width: 110px;
-              left: -90px;
-              top: 20px;
-              background-color: $aqua;
-              z-index: -1;
-          }
-
-        }
-
+      &.btn-contacts-send::after {
+        content: '';
+        position: absolute;
+        height: 40px;
+        width: 110px;
+        left: -90px;
+        top: 20px;
+        background-color: $aqua;
+        z-index: -1;
       }
 
     }

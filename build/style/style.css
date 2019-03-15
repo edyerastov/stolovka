@@ -64,7 +64,7 @@ button {
     outline: none; }
 
 .page-container {
-  margin: 30px 60px 55px 60px; }
+  padding: 30px 60px 55px 60px; }
 
 .default-title {
   font-size: 54px; }
@@ -503,7 +503,7 @@ button {
 
 @media screen and (max-width: 1600px) {
   .page-container {
-    margin: 30px 40px 55px 40px; }
+    padding: 30px 40px 55px 40px; }
   .btn {
     padding: 10px 14px; }
     .btn img {
@@ -696,9 +696,9 @@ button {
     .footer .copyright {
       font-size: 16px; } }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 991px) {
   .page-container {
-    margin: 15px; }
+    padding: 15px; }
   .desctop {
     display: none !important; }
   .mobile {
@@ -894,3 +894,36 @@ button {
     #sendModal .inputs input {
       width: 100% !important;
       padding: 10px; } }
+
+@media screen and (min-width: 600px) and (max-width: 991px) {
+  .how-it-works .order {
+    margin-left: 200px !important; }
+    .how-it-works .order img {
+      width: 210px !important; }
+    .how-it-works .order .desc {
+      margin-top: 220px !important; }
+  .how-it-works .kitchen img {
+    width: 200px !important;
+    margin-right: 40px !important; }
+  .how-it-works .kitchen p {
+    margin-left: 450px; }
+  .how-it-works .delivery {
+    margin-left: 240px !important;
+    margin-top: 80px !important; }
+  .how-it-works .client::after {
+    left: 280px !important;
+    top: 100px !important; }
+  .how-it-works .client p {
+    left: 30px !important; }
+  .menu {
+    font-size: 18px !important; }
+    .menu .img-wraper {
+      width: 35px !important; }
+      .menu .img-wraper img {
+        height: 35px !important; }
+    .menu .menu-count {
+      text-align: center; }
+      .menu .menu-count .menu-count-title::after {
+        left: 30% !important; }
+  .our-platform-list {
+    text-align: center; } }

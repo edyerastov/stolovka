@@ -2,6 +2,20 @@
 	margin-top: 180px;
 	font-size: 30px;
 
+	& .slider-left,
+	& .slider-right{
+		top: 50%;
+		z-index: 1;
+	}
+	.slider-left{
+		left: 0;
+		transform: translateY(-50%) scaleX(-1);
+	}
+	.slider-right{
+		right: 0;
+		transform: translateY(-50%);
+	}
+
 	& .row{
 		height: 500px;
 	}
@@ -26,6 +40,8 @@
 	.slider-control {
 		border-right: 2px solid;
 		height: 100%;
+
+		
 
 		& a{
 			text-align: left;

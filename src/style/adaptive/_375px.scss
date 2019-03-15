@@ -1,14 +1,14 @@
-@media screen and (max-width: 600px) {
-	.page-container {
-	    margin: 15px;
-	}
+@media screen and (max-width: 991px) {
+		.page-container {
+		    padding: 15px;
+		}
 
-	.desctop{
-		display: none!important;
-	}
-	.mobile{
-	  	display: inline-block!important;
-	}
+		.desctop{
+			display: none!important;
+		}
+		.mobile{
+		  	display: inline-block!important;
+		}
 
 	.btn-login {
 		font-size: 14px;
@@ -176,6 +176,13 @@
 	.menu{
 		font-size: 13px;
 
+		.slider-left{
+			left: 5px;
+		}
+		.slider-right{
+			right: 5px;
+		}
+
 		#menu-tabs{
 			flex-direction: row !important;
 			border-right: none;
@@ -296,11 +303,31 @@
 
 	}
 
-	#sendModal .modal-dialog{
+	.modal-dialog{
 		width: 100%;
 		height: 100vh;
 		margin: 0;
+	}
 
+	#thakYouModal{
+
+		.modal-content{
+			background: url('../img/mob/plane.png') -70px 30px no-repeat #fff;
+
+			.modal-body {
+			    padding: 80px 10px 100px 10px;
+			}
+
+			.thak-you-title {
+			    font-size: 19px;
+			}
+
+		}
+
+	}
+
+	#sendModal{
+		
 		.inputs{
 			flex-direction: column;
 
