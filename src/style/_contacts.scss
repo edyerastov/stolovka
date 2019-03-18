@@ -2,12 +2,16 @@
 	margin-top: 130px;
 
 	.contact + .contact{
-		margin-top: 68px;
+		margin-top: 30px;
 	}
 
-	& .mob, & .email{
+	& .mob, & .email, & .teleg{
 		font-size: 49px;
 		position: relative;
+	}
+
+	& .mob:hover{
+		text-decoration: underline;
 	}
 
 	& .mob::after{
@@ -30,6 +34,16 @@
 		background-color: $aqua;
 		z-index: -1;
 	}
+	& .teleg::after{
+		content: '';
+		position: absolute;
+		height: 20px;
+		width: 100px;
+		left: -10px;
+		top: 30px;
+		background-color: $aqua;
+		z-index: -1;
+	}
 
 	& form{
 		width: 960px;
@@ -46,7 +60,6 @@
 	}
 
 	.btn.btn-contacts-send{
-		background-color: initial;
 		font-size: 18px;
 		margin: 30px auto 0;
 

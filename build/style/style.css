@@ -81,8 +81,15 @@ button {
     -webkit-box-shadow: none !important;
             box-shadow: none !important; }
 
+.btn, button {
+  -webkit-transition: all .2s;
+  -o-transition: all .2s;
+  transition: all .2s;
+  -webkit-border-radius: 0;
+          border-radius: 0; }
+
 .btn:hover, button:hover {
-  outline: 4px solid #000; }
+  background-color: #2EC2A8; }
 
 .footer {
   padding: 15px 0;
@@ -457,10 +464,12 @@ button {
 .contacts {
   margin-top: 130px; }
   .contacts .contact + .contact {
-    margin-top: 68px; }
-  .contacts .mob, .contacts .email {
+    margin-top: 30px; }
+  .contacts .mob, .contacts .email, .contacts .teleg {
     font-size: 49px;
     position: relative; }
+  .contacts .mob:hover {
+    text-decoration: underline; }
   .contacts .mob::after {
     content: '';
     position: absolute;
@@ -479,6 +488,15 @@ button {
     top: 40px;
     background-color: #2EC2A8;
     z-index: -1; }
+  .contacts .teleg::after {
+    content: '';
+    position: absolute;
+    height: 20px;
+    width: 100px;
+    left: -10px;
+    top: 30px;
+    background-color: #2EC2A8;
+    z-index: -1; }
   .contacts form {
     width: 960px;
     margin: auto; }
@@ -488,7 +506,6 @@ button {
   .contacts textarea {
     height: 158px; }
   .contacts .btn.btn-contacts-send {
-    background-color: initial;
     font-size: 18px;
     margin: 30px auto 0; }
     .contacts .btn.btn-contacts-send::after {
@@ -568,7 +585,8 @@ button {
       .how-it-works .order-line .kitchen img {
         width: 135px; }
       .how-it-works .order-line .kitchen span {
-        left: 115px; }
+        left: 115px;
+        top: -20px; }
       .how-it-works .order-line .kitchen p {
         width: 245px;
         margin-top: 60px;
@@ -666,7 +684,7 @@ button {
           height: 18px;
           width: 18px;
           left: -10px; }
-  .contacts .mob, .contacts .email {
+  .contacts .mob, .contacts .email, .contacts .teleg {
     font-size: 35px; }
   .contacts .mob::after {
     height: 17px;
