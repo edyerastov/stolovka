@@ -10,7 +10,8 @@
 		position: relative;
 	}
 
-	& .mob:hover{
+	& .mob:hover,
+	& .teleg:hover{
 		text-decoration: underline;
 	}
 

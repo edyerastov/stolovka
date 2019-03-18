@@ -468,7 +468,8 @@ button {
   .contacts .mob, .contacts .email, .contacts .teleg {
     font-size: 49px;
     position: relative; }
-  .contacts .mob:hover {
+  .contacts .mob:hover,
+  .contacts .teleg:hover {
     text-decoration: underline; }
   .contacts .mob::after {
     content: '';
