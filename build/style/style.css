@@ -137,7 +137,16 @@ button {
   width: 100%;
   z-index: -2; }
   .modal-content .modal-body {
-    padding: 80px 50px 50px 50px; }
+    padding: 80px 50px 50px 50px; 
+    position: relative;
+    
+  }
+  .modal-salad{
+    position: absolute;
+    width: 250px;
+    right: -100px;
+    top: -100px;
+  }
 
 #thakYouModal .close {
   z-index: 5;
@@ -145,8 +154,7 @@ button {
   top: 20px; }
 
 #thakYouModal .modal-content {
-  background: url("../img/paper.png") left 20px no-repeat #fff;
-  position: relative; }
+  background: url("../img/paper.png") left 20px no-repeat #fff; }
   #thakYouModal .modal-content::after {
     content: '';
     position: absolute;
@@ -172,11 +180,14 @@ button {
 
 #sendModal .close {
   z-index: 5;
-  right: -30px;
+  left: -50px;
   top: -10px; }
 
 #sendModal .modal-content {
-  background: url("../img/cake.png") center 90% no-repeat #fff; }
+  background: url("../img/cake.png") center 90% no-repeat #fff; 
+  overflow: hidden;
+  position: relative;
+  }
   #sendModal .modal-content .inputs + .inputs {
     margin-top: 20px; }
   #sendModal .modal-content input {
@@ -915,7 +926,10 @@ button {
             flex-direction: column; }
     #sendModal .inputs input {
       width: 100% !important;
-      padding: 10px; } }
+      padding: 10px; } 
+      #sendModal .modal-content button {
+    height: 40px;
+}}
 
 @media screen and (min-width: 600px) and (max-width: 991px) {
   .how-it-works .order {
