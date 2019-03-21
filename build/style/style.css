@@ -384,6 +384,9 @@ button {
         margin-right: 10px; }
   .menu #menu-tabContent {
     height: 500px; }
+    #menu-tabContent{
+      overflow: hidden;
+    }
   .menu .menu-slider img {
     height: 500px;
     -o-object-fit: contain;
